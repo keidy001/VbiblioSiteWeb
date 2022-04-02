@@ -1,32 +1,32 @@
-<mat-toolbar class="navbar" style="background-color: #6A9BFF;">
-   <mat-icon>
-     <img class="example-icon" src="../assets/images/logo-icon.png" style="width: 80px;margin-top: -20px;">
-   </mat-icon>
- <div style="margin-left: 50px;">Virtual Biblio</div>
- <span class="example-spacer"></span>
+<mat-toolbar class="navbar col-md-12" style="background-color: #6A9BFF; height: 100px;">
+  <mat-icon>
+    <img class="example-icon" src="/assets/images/Virtual_biblio2.png" style="width: 100px;margin-top: -40px;">
+  </mat-icon>
+<div style="margin-left: 80px; color: rgb(117, 103, 103);">Virtual Biblio</div>
+<span class="example-spacer"></span>
 
+<ul mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+  <a href="" mat-button [routerLink]="'/accounts'" class="navItem">Accueil</a>
+ </ul>
  <ul mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-   <a href="" mat-button [routerLink]="'/accounts'" class="navItem">Accueil</a>
-  </ul>
-  <ul mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <a href="" mat-button [routerLink]="'/accounts'" class="navItem" >Damaines</a>
-  </ul>
-  <ul mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <a href="" mat-button [routerLink]="'/accounts'" class="navItem" >Ebooks</a>
-  </ul>
-  <ul mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <a href="" mat-button [routerLink]="'/accounts'" class="navItem" >AudioBooks</a>
-  </ul>
-  <ul mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <a href="" mat-button [routerLink]="'/accounts'" class="navItem" >Articles et Mémoires</a>
-  </ul>
-  <span class="example-spacer"></span>
-  <ul mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <a href="" mat-button [routerLink]="'/accounts'" class="navButton" >Se connecter</a>
-  </ul>
-  <ul mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <a href="" mat-button [routerLink]="'/accounts'" class="navButton" >S'inscrire</a>
-  </ul>
+   <a href="" mat-button [routerLink]="'/accounts'" class="navItem" >Damaines</a>
+ </ul>
+ <ul mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+   <a href="" mat-button [routerLink]="'/accounts'" class="navItem" >Ebooks</a>
+ </ul>
+ <ul mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+   <a href="" mat-button [routerLink]="'/accounts'" class="navItem" >AudioBooks</a>
+ </ul>
+ <ul mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+   <a href="" mat-button [routerLink]="'/accounts'" class="navItem" >Articles et Mémoires</a>
+ </ul>
+ <span class="example-spacer"></span>
+ <ul mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+   <a href="" mat-button [routerLink]="'/accounts'" class="navButton" >Se connecter</a>
+ </ul>
+ <ul mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+   <a href="" mat-button [routerLink]="'/accounts'" class="navButton" >S'inscrire</a>
+ </ul>
 
 </mat-toolbar>
 <router-outlet></router-outlet>

@@ -49,53 +49,15 @@
 <div class="row">
 
 
-    <div class="card col-md-3" animation="fade-in">
-      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+    <div class="card col-md-2 m-2 my-element" animation="fade-in" *ngFor="let livre of listLivre" (click)="detailLivre(livre.idLivre)">
+      <img src="{{photo}}{{livre?.idLivre}}" class="card-img-top" alt="image du livre" style="height:200px; width: auto;" >
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h6 class="card-title">{{livre.titre}}</h6>
+        <p class="card-text">{{livre.format}}</p>
         <a href="#!" class="btn btn-primary">Button</a>
       </div>
-    </div>
-    <div class="card col-md-3">
-      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#!" class="btn btn-primary">Button</a>
-      </div>
-    </div>
-    <div class="card col-md-3">
-      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#!" class="btn btn-primary">Button</a>
-      </div>
-    </div>
-    <div class="card col-md-3">
-      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#!" class="btn btn-primary">Button</a>
-      </div>
-    </div>
-    <div class="card col-md-3">
-      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#!" class="btn btn-primary">Button</a>
-      </div>
-    </div>
-    <div class="card col-md-3">
-      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#!" class="btn btn-primary">Button</a>
-      </div>
+ 
+    
     </div>
     <div >
       <mat-card class="example-card">

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,11 +24,16 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { AccueilComponent } from './accueil/accueil.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import { DetailLIvreComponent } from './detail-livre/detail-livre.component';
+import {MatDialogModule, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { PdfReaderComponent } from './pdf-reader/pdf-reader.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AccueilComponent
+    AccueilComponent,
+    DetailLIvreComponent,
+    PdfReaderComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +58,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MdbValidationModule,
     MatCardModule,
     MatGridListModule,
+    HttpClientModule,
+    MatDialogModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

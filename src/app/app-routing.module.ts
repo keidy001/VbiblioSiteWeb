@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path:'accueil', component:AccueilComponent}
+  { path:'accueil', component:AccueilComponent},
+  { path:'pdfreader/:id', component:AccueilComponent},
 ];
 
 @NgModule({
