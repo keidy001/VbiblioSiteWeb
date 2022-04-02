@@ -1,17 +1,19 @@
+<div style="background-color: white;">
 <mat-card class="DetailCard">
     <mat-card-title-group>
       <mat-card-title style="margin-bottom:10% ;"><h2><b>{{detailLivre?.titre}}</b></h2></mat-card-title>
-      
+
       <mat-card-subtitle><h4><b>Auteur : </b>{{detailLivre?.auteur}}</h4></mat-card-subtitle>
       <mat-card-subtitle *ngIf="detailLivre?.prix > 0"><h4><b>Prix : </b>{{detailLivre?.prix |currency:" ":true:"1.0"}} f cfa</h4></mat-card-subtitle>
       <mat-card-subtitle *ngIf="detailLivre?.prix == 0"><h4><b>Prix : </b>Gratuit</h4></mat-card-subtitle>
-      <mat-card-subtitle><h6>{{detailLivre?.description}}</h6></mat-card-subtitle>
+
       <img mat-card-md-image src="{{photo}}{{detailLivre?.idLivre}}" style="width:200px; height: auto;" >
     </mat-card-title-group>
-
-    <button class="btn bnt-primary" style="position: absolute; bottom: 0; right: 0;  left: 0; width: 60px; " routerLink="/pdfreader/{{detailLivre?.idLivre}}">Lire</button>
+    <mat-card-subtitle><h4><b style="text-decoration: underline;">Description</b></h4></mat-card-subtitle>
+    <mat-card-subtitle><h6>{{detailLivre?.description}}</h6></mat-card-subtitle>
+    <button class="btn bnt-primary" style="  bottom: 0; right: 0;  left: 0; width: 60px; " routerLink="/pdfreader/{{detailLivre?.idLivre}}">Lire</button>
 
   </mat-card>
-  
 
 
+</div>

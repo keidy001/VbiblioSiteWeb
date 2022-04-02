@@ -22,7 +22,7 @@ export class AccueilComponent implements OnInit {
     private service :LivreServiceService,
     private route: ActivatedRoute,
     private modalctrl:MatDialog,
-    
+
   ) { }
 
   ngOnInit(): void {
@@ -39,13 +39,15 @@ export class AccueilComponent implements OnInit {
   async detailLivre(idLivre: any ) {
 
     const modal = await this.modalctrl.open(DetailLIvreComponent,{
-    
+
       data:idLivre,
+      panelClass:'detailStile'
+
     })
-     
-      
-    
-    
+
+
+
+
   }
 
  // end popover

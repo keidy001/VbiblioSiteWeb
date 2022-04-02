@@ -25,13 +25,13 @@
     <mat-grid-list cols="2" rowHeight="2:1" fl>
       <div>
       <mat-grid-tile>
-      <img  src="../../assets/images/images.jpg" style="width: 50%;">
+      <img  src="/assets/images/images.jpg" style="width: 50%;">
 
     </mat-grid-tile>
     </div>
-      <mat-grid-tile><img  src="../../assets/images/audio1.png" style="width: 50%;"></mat-grid-tile>
-      <mat-grid-tile><img  src="../../assets/images/book3.jpg" style="width: 50%;"></mat-grid-tile>
-      <mat-grid-tile><img  src="../../assets/images/document1.jpg" style="width: 50%;"></mat-grid-tile>
+      <mat-grid-tile><img  src="/assets/images/audio1.png" style="width: 50%;"></mat-grid-tile>
+      <mat-grid-tile><img  src="/assets/images/book3.jpg" style="width: 50%;"></mat-grid-tile>
+      <mat-grid-tile><img  src="/assets/images/document1.jpg" style="width: 50%;"></mat-grid-tile>
     </mat-grid-list>
 
   </div>
@@ -46,7 +46,7 @@
   <h2  class="title1">Les plus Télécharger</h2>
   <div  style="height: 20%;"></div>
 
-<div class="row">
+<div class="row justify-content-center">
 
 
     <div class="card col-md-2 m-2 my-element" animation="fade-in" *ngFor="let livre of listLivre" (click)="detailLivre(livre.idLivre)">
@@ -54,22 +54,10 @@
       <div class="card-body">
         <h6 class="card-title">{{livre.titre}}</h6>
         <p class="card-text">{{livre.format}}</p>
-        <a href="#!" class="btn btn-primary">Button</a>
-      </div>
- 
-    
-    </div>
-    <div >
-      <mat-card class="example-card">
-        <mat-card-title-group>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Small</mat-card-subtitle>
-          <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
-        </mat-card-title-group>
-        <mat-card-content>
 
-        </mat-card-content>
-      </mat-card>
-</div>
+      </div>
+
+
+    </div>
 </div>
 </div>

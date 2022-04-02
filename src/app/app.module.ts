@@ -28,12 +28,15 @@ import { DetailLIvreComponent } from './detail-livre/detail-livre.component';
 import {MatDialogModule, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { PdfReaderComponent } from './pdf-reader/pdf-reader.component';
+import { ReaderComponent } from './reader/reader.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     AccueilComponent,
     DetailLIvreComponent,
-    PdfReaderComponent
+    PdfReaderComponent,
+    ReaderComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +63,8 @@ import { PdfReaderComponent } from './pdf-reader/pdf-reader.component';
     MatGridListModule,
     HttpClientModule,
     MatDialogModule,
-    PdfViewerModule
+    PdfViewerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
